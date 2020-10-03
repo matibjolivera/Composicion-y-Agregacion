@@ -84,4 +84,11 @@ public class PhoneNumber {
     public String getValue() {
         return "(+" + this.getCountryCode() + ") " + this.getSuscriberNumber();
     }
+
+    /**
+     * Show info.
+     */
+    public void showInfo() {
+        System.out.println(this.getLineType() + ": " + this.getValue());
+    }
 }

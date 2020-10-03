@@ -107,14 +107,14 @@ public class Person {
     private void showPhones() {
         System.out.println("Teléfonos: ");
         for (PhoneNumber phone : this.getPhoneNumbers()) {
-            System.out.println(phone.getLineType() + ": " + phone.getValue());
+            phone.showInfo();
         }
     }
 
     private void showEmails() {
         System.out.println("Emails: ");
-        for (PhoneNumber phone : this.getPhoneNumbers()) {
-            System.out.println(phone.getLineType() + ": " + phone.getValue());
+        for (Email email : this.getEmails()) {
+            System.out.println(email.getValue());
         }
     }
 }
