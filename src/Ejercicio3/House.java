@@ -103,4 +103,22 @@ public class House {
             furniture.showInfo();
         }
     }
+
+    /**
+     * Add person.
+     *
+     * @param person the person
+     */
+    public void addPerson(Person person) {
+        this.getPeople().add(person);
+    }
+
+    /**
+     * Add furniture.
+     *
+     * @param furniture the furniture
+     */
+    public void addFurniture(Furniture furniture) {
+        this.getFurnitures().add(furniture);
+    }
 }
