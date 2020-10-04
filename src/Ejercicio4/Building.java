@@ -6,6 +6,7 @@ import java.util.ArrayList;
  * The type Building.
  */
 public class Building {
+
     private ArrayList<House> houses;
 
     /**
@@ -53,14 +54,18 @@ public class Building {
 
     private void movePeople(House houseOrigin, House houseDestination) {
         ArrayList<Person> peopleToMove = houseOrigin.getPeople();
+        for (Person person : peopleToMove) {
+            houseDestination.addPerson(person);
+        }
         houseOrigin.removePeople();
-        houseDestination.addPeople(peopleToMove);
     }
 
     private void moveFurnitures(House houseOrigin, House houseDestination) {
         ArrayList<Furniture> furnitureToMove = houseOrigin.getFurnitures();
+        for (Furniture furniture : furnitureToMove) {
+            houseDestination.addFurniture(furniture);
+        }
         houseOrigin.removeFurnitures();
-        houseDestination.addFurnitures(furnitureToMove);
     }
 
     private House searchHouse(int floor, String door) {

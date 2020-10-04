@@ -80,6 +80,7 @@ public class House {
      * Show info.
      */
     public void showInfo() {
+    	System.out.println("--");
         System.out.println("Vivienda: ");
 
         this.getAddress().showInfo();
@@ -121,28 +122,10 @@ public class House {
     }
 
     /**
-     * Add people.
-     *
-     * @param people the people
-     */
-    public void addPeople(ArrayList<Person> people) {
-        this.getPeople().addAll(people);
-    }
-
-    /**
      * Remove furnitures.
      */
     public void removeFurnitures() {
         this.getFurnitures().clear();
-    }
-
-    /**
-     * Add furnitures.
-     *
-     * @param people the people
-     */
-    public void addFurnitures(ArrayList<Furniture> people) {
-        this.getFurnitures().addAll(people);
     }
 
     /**
