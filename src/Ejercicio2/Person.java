@@ -165,4 +165,22 @@ public class Person {
             pet.showInfo();
         }
     }
+
+    /**
+     * Add email.
+     *
+     * @param email the email
+     */
+    public void addEmail(Email email) {
+        this.getEmails().add(email);
+    }
+
+    /**
+     * Add phone number.
+     *
+     * @param phoneNumber the phone number
+     */
+    public void addPhoneNumber(PhoneNumber phoneNumber) {
+        this.getPhoneNumbers().add(phoneNumber);
+    }
 }
