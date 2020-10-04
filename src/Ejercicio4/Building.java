@@ -93,4 +93,13 @@ public class Building {
             house.showInfo();
         }
     }
+
+    /**
+     * Add house.
+     *
+     * @param house the house
+     */
+    public void addHouse(House house) {
+        this.getHouses().add(house);
+    }
 }
