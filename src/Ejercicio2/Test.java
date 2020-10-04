@@ -1,10 +1,5 @@
 package Ejercicio2;
 
-import Ejercicio2.Email;
-import Ejercicio2.LineType;
-import Ejercicio2.Person;
-import Ejercicio2.PhoneNumber;
-
 public class Test {
 
     public static void main(String[] args) {
