@@ -22,6 +22,9 @@ public class Person {
     public Person(String firstname, String lastname) {
         this.firstname = firstname;
         this.lastname = lastname;
+        this.emails = new ArrayList<>();
+        this.phoneNumbers = new ArrayList<>();
+        this.pets = new ArrayList<>();
     }
 
     /**
