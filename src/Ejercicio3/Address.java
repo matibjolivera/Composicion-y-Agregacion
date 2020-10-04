@@ -25,7 +25,6 @@ public class Address {
         this.number = number;
         this.floor = floor;
         this.door = door;
-        this.people = new ArrayList<>();
     }
 
     /**
@@ -98,24 +97,6 @@ public class Address {
      */
     public void setDoor(String door) {
         this.door = door;
-    }
-
-    /**
-     * Gets people.
-     *
-     * @return the people
-     */
-    public ArrayList<Person> getPeople() {
-        return people;
-    }
-
-    /**
-     * Sets people.
-     *
-     * @param people the people
-     */
-    public void setPeople(ArrayList<Person> people) {
-        this.people = people;
     }
 
     /**
