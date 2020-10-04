@@ -25,6 +25,7 @@ public class Test {
             person.addPhoneNumber(phoneNumber2);
 
             person.showAll();
+            System.out.println("------------------------");
         }
     }
 }

@@ -24,6 +24,7 @@ public class Test {
             house.addFurniture(furniture3);
 
             house.showInfo();
+            System.out.println("------------------------");
         }
     }
 }

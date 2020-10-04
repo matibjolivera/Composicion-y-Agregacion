@@ -28,6 +28,7 @@ public class Test {
             person.addPet(pet2);
 
             person.showAll();
+            System.out.println("------------------------");
         }
     }
 }
