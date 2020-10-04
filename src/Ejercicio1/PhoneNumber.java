@@ -5,18 +5,20 @@ package Ejercicio1;
  */
 public class PhoneNumber {
 
+    private int characteristic;
     private int suscriberNumber;
     private int countryCode;
     private LineType lineType;
 
-    /**
-     * Instantiates a new Phone number.
-     *
-     * @param suscriberNumber the suscriber number
-     * @param countryCode     the country code
-     * @param lineType        the line type
-     */
-    public PhoneNumber(int suscriberNumber, int countryCode, LineType lineType) {
+    public PhoneNumber() {
+        this.characteristic = 0;
+        this.suscriberNumber = 0;
+        this.countryCode = 0;
+        this.lineType = null;
+    }
+
+    public PhoneNumber(int characteristic, int suscriberNumber, int countryCode, LineType lineType) {
+        this.characteristic = characteristic;
         this.suscriberNumber = suscriberNumber;
         this.countryCode = countryCode;
         this.lineType = lineType;
@@ -74,6 +76,14 @@ public class PhoneNumber {
      */
     public void setLineType(LineType lineType) {
         this.lineType = lineType;
+    }
+
+    public int getCharacteristic() {
+        return characteristic;
+    }
+
+    public void setCharacteristic(int characteristic) {
+        this.characteristic = characteristic;
     }
 
     /**
